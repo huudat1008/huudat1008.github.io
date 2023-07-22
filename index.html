@@ -1,44 +1,44 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Demo WebRTC</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/><script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"><style>.fs-7 {
-        font-size: .7rem;
-      }
-      .cursor-pointer {
-        cursor: pointer;
-      }
-      .callOptions {
-        background-color: #ffffff99;
-      }
-      .videoWrapper {
-        min-height: 60vh;
-      }
-      .videoWrapper video {
-        min-height: 300px;
-        object-fit: cover;
-      }
-      #remoteVideo {
-        height: 60vh;
-      }
-      #localVideo {
-        max-width: 250px;
-      }
-      @media (max-width: 991.98px) {
-        #remoteVideo {
-          min-height: 80vh;
-        }
-      }
-      @media (max-width: 767.98px) {
-        #remoteVideo {
-          min-height: 95vh;
-        }
-        #localVideo {
-          max-height: 30vh;
-        }
-      }
-      @media (max-width: 575.98px) {
-        .localWrapper {
-          margin-top: 1rem;
-          position: relative!important;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-      }</style><script defer="defer" src="index.js"></script></head><body><div class="container py-5"><div class="row mb-5"><div class="col-xl-9"><div class="h-100 d-flex border shadow-sm rounded overflow-hidden"><div class="col-4 col-md-3 col-lg-2 p-0 d-flex align-items-center"><div class="d-flex align-items-center h-100 bg-white px-2"><span class="material-symbols-outlined text-info">calendar_month</span></div><div class="px-3"><label class="m-0 fs-5 text-primary-emphasis fw-bold">27</label> <label class="fs-7">Upcoming appoinments</label></div></div><div class="row col-sm-8 col-md-9 col-lg-10 pe-4 pe-sm-0"><div class="col-12 col-md-6 col-lg-3 my-3"><div class="p-2 shadow-sm bg-white rounded d-flex align-items-center"><span class="material-symbols-outlined text-secondary fs-1">account_circle</span><div class="ms-2"><p class="m-0 fs-6 text-primary-emphasis fw-bold">Palpitine</p><p class="m-0 fs-7 text-secondary">3:05PM</p></div></div></div><div class="col-12 col-md-6 col-lg-3 my-3"><div class="p-2 shadow-sm bg-white rounded d-flex align-items-center"><span class="material-symbols-outlined text-secondary fs-1">account_circle</span><div class="ms-2"><p class="m-0 fs-6 text-primary-emphasis fw-bold">Palpitine</p><p class="m-0 fs-7 text-secondary">3:05PM</p></div></div></div><div class="col-12 col-md-6 col-lg-3 my-3"><div class="p-2 shadow-sm bg-white rounded d-flex align-items-center"><span class="material-symbols-outlined text-secondary fs-1">account_circle</span><div class="ms-2"><p class="m-0 fs-6 text-primary-emphasis fw-bold">Palpitine</p><p class="m-0 fs-7 text-secondary">3:05PM</p></div></div></div><div class="col-12 col-md-6 col-lg-3 my-3"><div class="p-2 shadow-sm bg-white rounded d-flex align-items-center"><span class="material-symbols-outlined text-secondary fs-1">account_circle</span><div class="ms-2"><p class="m-0 fs-6 text-primary-emphasis fw-bold">Palpitine</p><p class="m-0 fs-7 text-secondary">3:05PM</p></div></div></div></div></div></div><div class="col-3 d-none d-xl-block"><div class="h-100 shadow-sm bg-white rounded d-flex overflow-hidden"><div class="col-9 d-flex justify-content-around align-items-center py-3 ps-3"><div class="d-flex flex-column justify-content-center"><p class="m-0 text-primary-emphasis fs-7">Welcome back,</p><p class="m-0 text-primary-emphasis fw-bold fs-5">Dr. Lemmywinks</p></div><div class="px-2"><span class="material-symbols-outlined fs-1">account_circle</span></div></div><div class="col-3 bg-primary d-flex justify-content-center align-items-center"><span class="material-symbols-outlined text-white fs-1">menu</span></div></div></div></div><div class="row"><div class="col-xl-9 mb-4"><div class="d-md-flex mb-4"><div class="col-md-4 mb-3 mb-md-0 p-0 d-flex flex-column justify-content-center"><div class="d-flex align-items-center"><span class="material-symbols-outlined text-white fs-3 bg-primary rounded-circle p-1">call </span><label class="ms-2">On a call with:</label></div><p class="fs-4 text-primary-emphasis fw-bold m-0">Sweetwater, Janette</p></div><div class="col-md-8 rounded border shadow-sm row mx-0 py-2 justify-content-between"><div class="col-6 col-sm-3 col-lg-2 mb-3 mb-lg-0 d-flex flex-column justify-content-center"><p class="m-0 text-secondary fs-7">MRN</p><p class="m-0 text-primary-emphasis">G98123123</p></div><div class="col-6 col-sm-3 col-lg-2 mb-3 mb-lg-0 d-flex flex-column justify-content-center"><p class="m-0 text-secondary fs-7">DOB</p><p class="m-0 text-primary-emphasis">06/06/1993</p></div><div class="col-6 col-sm-3 col-lg-2 mb-3 mb-lg-0 d-flex flex-column justify-content-center"><p class="m-0 text-secondary fs-7">SEX</p><span class="material-symbols-outlined text-primary-emphasis">female</span></div><div class="col-6 col-sm-3 col-lg-2 mb-3 mb-lg-0 d-flex flex-column justify-content-center"><p class="m-0 text-secondary fs-7">LAST APPT</p><p class="m-0 text-primary-emphasis">06/06/1993</p></div><div class="col-12 col-lg-4 d-flex flex-column justify-content-center"><button type="button" class="btn btn-primary">View Profile +</button></div></div></div><div class="position-relative"><div id="videoWrapper" class="videoWrapper m-0 row bg-secondary rounded justify-content-center py-2 px-3"></div><div class="localWrapper position-absolute bottom-0 end-0 mb-2 me-1"><video id="localVideo" class="bg-secondary-subtle rounded shadow-sm" muted autoplay playsinline></video><div class="callOptions rounded p-2 mt-3 d-flex justify-content-between shadow-sm"><div class="d-flex align-items-center"><span class="material-symbols-outlined me-3 fs-6 p-2 rounded-circle bg-primary text-white cursor-pointer">volume_up </span><span class="material-symbols-outlined me-3 fs-6 p-2 rounded-circle bg-primary text-white cursor-pointer">graphic_eq </span><span class="material-symbols-outlined me-3 fs-6 p-2 rounded-circle bg-primary text-white cursor-pointer">fullscreen_exit</span></div><span id="exitBtn" class="material-symbols-outlined fs-4 p-2 rounded-circle bg-danger text-white cursor-pointer">call_end</span></div></div></div></div><div class="col-xl-3"><div class="bg-white shadow-sm rounded overflow-hidden p-3"><div class="d-flex mb-4"><div class="col-9 d-flex align-items-center"><span class="material-symbols-outlined fs-1">account_circle</span><p class="m-0 text-primary-emphasis fw-bold fs-6 px-1">Sweetwater, Janette</p></div><div class="col-3 d-flex align-items-center justify-content-between"><span class="material-symbols-outlined fs-4">more_vert </span><span class="material-symbols-outlined fs-2 border border-primary rounded p-2">close</span></div></div><div class="rounded border p-3"><div class="d-flex align-items-center justify-content-between py-2"><span class="material-symbols-outlined bg-primary-subtle rounded p-2 fs-2">favorite</span><div><p class="m-0 fs-6 fw-bold text-primary-emphasis">115</p><p class="m-0 fs-7 text-secondary">BLOOD PRESSURE</p></div><span class="material-symbols-outlined text-info fs-1">bar_chart</span></div></div></div></div></div></div></body></html>
+  font-size: .7rem;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.callOptions {
+  background-color: #ffffff99;
+}
+.videoWrapper {
+  min-height: 60vh;
+}
+.videoWrapper video {
+  min-height: 300px;
+  object-fit: cover;
+}
+#remoteVideo {
+  height: 60vh;
+}
+#localVideo {
+  max-width: 250px;
+}
+@media (max-width: 991.98px) {
+  #remoteVideo {
+    min-height: 80vh;
+  }
+}
+@media (max-width: 767.98px) {
+  #remoteVideo {
+    min-height: 95vh;
+  }
+  #localVideo {
+    max-height: 30vh;
+  }
+}
+@media (max-width: 575.98px) {
+  .localWrapper {
+    margin-top: 1rem;
+    position: relative!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}</style><script defer="defer" src="index.js"></script></head><body><div class="container py-5"><div class="row mb-5"><div class="col-xl-9"><div class="h-100 d-flex border shadow-sm rounded overflow-hidden"><div class="col-4 col-md-3 col-lg-2 p-0 d-flex align-items-center"><div class="d-flex align-items-center h-100 bg-white px-2"><span class="material-symbols-outlined text-info">calendar_month</span></div><div class="px-3"><label class="m-0 fs-5 text-primary-emphasis fw-bold">27</label> <label class="fs-7">Upcoming appoinments</label></div></div><div class="row col-sm-8 col-md-9 col-lg-10 pe-4 pe-sm-0"><div class="col-12 col-md-6 col-lg-3 my-3"><div class="p-2 shadow-sm bg-white rounded d-flex align-items-center"><span class="material-symbols-outlined text-secondary fs-1">account_circle</span><div class="ms-2"><p class="m-0 fs-6 text-primary-emphasis fw-bold">Palpitine</p><p class="m-0 fs-7 text-secondary">3:05PM</p></div></div></div><div class="col-12 col-md-6 col-lg-3 my-3"><div class="p-2 shadow-sm bg-white rounded d-flex align-items-center"><span class="material-symbols-outlined text-secondary fs-1">account_circle</span><div class="ms-2"><p class="m-0 fs-6 text-primary-emphasis fw-bold">Palpitine</p><p class="m-0 fs-7 text-secondary">3:05PM</p></div></div></div><div class="col-12 col-md-6 col-lg-3 my-3"><div class="p-2 shadow-sm bg-white rounded d-flex align-items-center"><span class="material-symbols-outlined text-secondary fs-1">account_circle</span><div class="ms-2"><p class="m-0 fs-6 text-primary-emphasis fw-bold">Palpitine</p><p class="m-0 fs-7 text-secondary">3:05PM</p></div></div></div><div class="col-12 col-md-6 col-lg-3 my-3"><div class="p-2 shadow-sm bg-white rounded d-flex align-items-center"><span class="material-symbols-outlined text-secondary fs-1">account_circle</span><div class="ms-2"><p class="m-0 fs-6 text-primary-emphasis fw-bold">Palpitine</p><p class="m-0 fs-7 text-secondary">3:05PM</p></div></div></div></div></div></div><div class="col-3 d-none d-xl-block"><div class="h-100 shadow-sm bg-white rounded d-flex overflow-hidden"><div class="col-9 d-flex justify-content-around align-items-center py-3 ps-3"><div class="d-flex flex-column justify-content-center"><p class="m-0 text-primary-emphasis fs-7">Welcome back,</p><p class="m-0 text-primary-emphasis fw-bold fs-5">Dr. Lemmywinks</p></div><div class="px-2"><span class="material-symbols-outlined fs-1">account_circle</span></div></div><div class="col-3 bg-primary d-flex justify-content-center align-items-center"><span class="material-symbols-outlined text-white fs-1">menu</span></div></div></div></div><div class="row"><div class="col-xl-9 mb-4"><div class="d-md-flex mb-4"><div class="col-md-4 mb-3 mb-md-0 p-0 d-flex flex-column justify-content-center"><div class="d-flex align-items-center"><span class="material-symbols-outlined text-white fs-3 bg-primary rounded-circle p-1">call </span><label class="ms-2">On a call with:</label></div><p class="fs-4 text-primary-emphasis fw-bold m-0">Sweetwater, Janette</p></div><div class="col-md-8 rounded border shadow-sm row mx-0 py-2 justify-content-between"><div class="col-6 col-sm-3 col-lg-2 mb-3 mb-lg-0 d-flex flex-column justify-content-center"><p class="m-0 text-secondary fs-7">MRN</p><p class="m-0 text-primary-emphasis">G98123123</p></div><div class="col-6 col-sm-3 col-lg-2 mb-3 mb-lg-0 d-flex flex-column justify-content-center"><p class="m-0 text-secondary fs-7">DOB</p><p class="m-0 text-primary-emphasis">06/06/1993</p></div><div class="col-6 col-sm-3 col-lg-2 mb-3 mb-lg-0 d-flex flex-column justify-content-center"><p class="m-0 text-secondary fs-7">SEX</p><span class="material-symbols-outlined text-primary-emphasis">female</span></div><div class="col-6 col-sm-3 col-lg-2 mb-3 mb-lg-0 d-flex flex-column justify-content-center"><p class="m-0 text-secondary fs-7">LAST APPT</p><p class="m-0 text-primary-emphasis">06/06/1993</p></div><div class="col-12 col-lg-4 d-flex flex-column justify-content-center"><button type="button" class="btn btn-primary">View Profile +</button></div></div></div><div class="position-relative"><div id="videoWrapper" class="videoWrapper m-0 row bg-secondary rounded justify-content-center py-2 px-3"></div><div class="localWrapper position-absolute bottom-0 end-0 mb-2 me-1"><video id="localVideo" class="bg-secondary-subtle rounded shadow-sm" muted autoplay playsinline></video><div class="callOptions rounded p-2 mt-3 d-flex justify-content-between shadow-sm"><div class="d-flex align-items-center"><span class="material-symbols-outlined me-3 fs-6 p-2 rounded-circle bg-primary text-white cursor-pointer">volume_up </span><span class="material-symbols-outlined me-3 fs-6 p-2 rounded-circle bg-primary text-white cursor-pointer">graphic_eq </span><span class="material-symbols-outlined me-3 fs-6 p-2 rounded-circle bg-primary text-white cursor-pointer">fullscreen_exit</span></div><span id="exitBtn" class="material-symbols-outlined fs-4 p-2 rounded-circle bg-danger text-white cursor-pointer">call_end</span></div></div></div></div><div class="col-xl-3"><div class="bg-white shadow-sm rounded overflow-hidden p-3"><div class="d-flex mb-4"><div class="col-9 d-flex align-items-center"><span class="material-symbols-outlined fs-1">account_circle</span><p class="m-0 text-primary-emphasis fw-bold fs-6 px-1">Sweetwater, Janette</p></div><div class="col-3 d-flex align-items-center justify-content-between"><span class="material-symbols-outlined fs-4">more_vert </span><span class="material-symbols-outlined fs-2 border border-primary rounded p-2">close</span></div></div><div class="rounded border p-3"><div class="d-flex align-items-center justify-content-between py-2"><span class="material-symbols-outlined bg-primary-subtle rounded p-2 fs-2">favorite</span><div><p class="m-0 fs-6 fw-bold text-primary-emphasis">115</p><p class="m-0 fs-7 text-secondary">BLOOD PRESSURE</p></div><span class="material-symbols-outlined text-info fs-1">bar_chart</span></div></div></div></div></div></div></body></html>
